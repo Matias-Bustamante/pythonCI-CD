@@ -3,6 +3,6 @@ import pytest
 
 def test_suma():
 
-    assert suma(2,3)==5 
+    assert suma(2,8)==5 
 
 test_suma()
