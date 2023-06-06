@@ -15,9 +15,15 @@ jobs:
         uses: actions/setup-python@v3
       - run: pip install -r requirements.txt
       - run: python test_main.py
-      - uses: johnbeynon/render-deploy-action@v0.0.8
-        with: 
-          api-key: rnd_92bD3iFPFqrKzCB1rLO6Pt9amJHI
-          app_name: pythonCI-CD
-          
+    deploy: 
+        name: deploy 
+        needs: [build] 
+        runs-on: ubuntu-latest 
+        steps: 
+          - name: Deploy to production
+            uses: johnbeynon/render-deploy-action@v0.0.8
+            with: 
+              api-key: rnd_92bD3iFPFqrKzCB1rLO6Pt9amJHI
+              app_name: pythonCI-CD
+
       
