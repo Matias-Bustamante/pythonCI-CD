@@ -24,6 +24,6 @@ jobs:
             uses: johnbeynon/render-deploy-action@v0.0.8
             with: 
               api-key: rnd_92bD3iFPFqrKzCB1rLO6Pt9amJHI
-              app_name: pythonCI-CD
+              service-id: srv-chv7bdb3cv230onscehg
 
       
