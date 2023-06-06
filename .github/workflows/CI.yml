@@ -23,7 +23,8 @@ jobs:
           - name: Deploy to production
             uses: johnbeynon/render-deploy-action@v0.0.8
             with: 
-              api-key: rnd_92bD3iFPFqrKzCB1rLO6Pt9amJHI
-              service-id: srv-chv7bdb3cv230onscehg
+              service-id: ${{secrets.SECRET_ID}}
+              api-key: ${{secrets.SECRET_KEY}}
+              
 
       
