@@ -36,7 +36,7 @@ jobs:
               webhook-url: ${{ secrets.SECFRETS_WEBHOOK }}
               content: "El Test fallo no paso al Entorno de Ejecucion"
               color-failure: 'eb4034'
-              avatar-url: 'https://octodex.github.com/images/Terracottocat_Single.png'
+              avatar-url: 'https://octodex.github.com/images/filmtocats.png'
   
    
 
