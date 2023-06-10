@@ -32,6 +32,7 @@ jobs:
               webhook: ${{ secrets.SECFRETS_WEBHOOK }}
               title: "test"
               description: "El test fallo"
+              message: "Error en el test"
                 
 
       
