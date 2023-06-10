@@ -34,7 +34,7 @@ jobs:
             uses: tsickert/discord-webhook@v5.3.0
             with: 
               webhook-url: ${{ secrets.SECFRETS_WEBHOOK }}
-              avatar-url: 'https://octodex.github.com/images/filmtocats.png'
+              avatar-url: 'https://octodex.github.com/sentrytocat/'
               content: "El Test fallo no paso al Entorno de Ejecucion"
               color-failure: '#eb4034'
              
