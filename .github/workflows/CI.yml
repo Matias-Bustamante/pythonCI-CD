@@ -26,6 +26,7 @@ jobs:
               service-id: ${{ secrets.SECRET_ID }}
               api-key: ${{ secrets.SECRET_KEY }}
     message: 
+        needs: [build]
         if: failure()
         runs-on: ubuntu-latest
         steps: 
