@@ -25,10 +25,10 @@ jobs:
             with: 
               service-id: ${{ secrets.SECRET_ID }}
               api-key: ${{ secrets.SECRET_KEY }}
-      message: 
-          needs: [build]
-          runs-on: ubuntu-latest
-          steps: 
+    message: 
+        needs: [build]
+        runs-on: ubuntu-latest
+        steps: 
           - name: Discord actions 
             uses: tsickert/discord-webhook@v5.3.0
             with: 
