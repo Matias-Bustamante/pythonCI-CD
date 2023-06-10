@@ -26,12 +26,12 @@ jobs:
               service-id: ${{ secrets.SECRET_ID }}
               api-key: ${{ secrets.SECRET_KEY }}
           - name: Mensaje de Discord
-            - uses: sarisia/actions-status-discord@v1
-              if: failure()
-              with:
-                webhook: ${{ secrets.SECFRETS_WEBHOOK }}
-                title: "test"
-                description: "El test fallo"
+            uses: sarisia/actions-status-discord@v1
+            if: failure()
+            with:
+              webhook: ${{ secrets.SECFRETS_WEBHOOK }}
+              title: "test"
+              description: "El test fallo"
                 
 
       
