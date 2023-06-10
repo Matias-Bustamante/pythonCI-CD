@@ -35,7 +35,7 @@ jobs:
             with: 
               webhook-url: ${{ secrets.SECFRETS_WEBHOOK }}
               username: Bob
-              avatar-url: "https://octodex.github.com/images/daftpunktocat-thomas.gif"
+              avatar-url: https://octodex.github.com/images/Sentrytocat_octodex.jpg
               content: "El Test fallo"
               color-failure: '#eb4034'
              
