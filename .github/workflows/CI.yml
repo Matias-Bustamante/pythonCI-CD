@@ -51,7 +51,7 @@ jobs:
               username: Bob
               avatar-url: https://octodex.github.com/images/Sentrytocat_octodex.jpg
               content: "Deploy Exitoso"
-              color-failure: '#eb4034
+              color-failure: '#eb4034'
              
   
    
