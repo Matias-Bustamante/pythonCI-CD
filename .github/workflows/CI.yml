@@ -30,14 +30,13 @@ jobs:
         if: failure()
         runs-on: ubuntu-latest
         steps: 
-          - name: Discord actions 
-            uses: tsickert/discord-webhook@v5.3.0
-            with: 
-              webhook-url: ${{ secrets.SECFRETS_WEBHOOK }}
-              username: Bob
-              avatar-url: https://octodex.github.com/images/Sentrytocat_octodex.jpg
-              content: "El Test fallo"
-              color-failure: '#eb4034'
+         - name: Test Failure
+           uses: rjstone/discord-webhook-notify@v1
+           if: failure()
+           with:
+              severity: error
+              details: Test Fallo!
+              webhookUrl: ${{ secrets.SECFRETS_WEBHOOK }}
     
     DeployExitoso: 
         needs: [deploy]
