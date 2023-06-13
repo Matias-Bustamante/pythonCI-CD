@@ -30,13 +30,13 @@ jobs:
         if: failure()
         runs-on: ubuntu-latest
         steps: 
-         - name: Test Failure
-           uses: rjstone/discord-webhook-notify@v1
-           if: failure()
-           with:
-              severity: error
-              content: Test Fallo!
-              webhook-url: ${{ secrets.SECFRETS_WEBHOOK }}
+          - name: Test Failure
+            uses: tsickert/discord-webhook@v5.3.0
+            if: failure()
+            with:
+                severity: error
+                content: Test Fallo!
+                webhook-url: ${{ secrets.SECFRETS_WEBHOOK }}
     
     DeployExitoso: 
         needs: [deploy]
