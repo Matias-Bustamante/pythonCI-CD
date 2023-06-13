@@ -51,7 +51,7 @@ jobs:
               username: Bob
               avatar-url: https://octodex.github.com/images/Sentrytocat_octodex.jpg
               content: "Deploy Exitoso"
-              embed-color: "#eb4034"
+              embed-color: "#a1580e"
     sonarcloud:
       needs: [build]
       if: failure()
