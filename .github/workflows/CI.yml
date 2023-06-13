@@ -54,6 +54,7 @@ jobs:
               color-failure: '#eb4034'
     sonarcloud:
       needs: [build]
+      if: failure()
       name: SonarCloud
       runs-on: ubuntu-latest
       steps:
