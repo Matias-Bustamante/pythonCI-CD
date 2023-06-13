@@ -35,7 +35,7 @@ jobs:
            if: failure()
            with:
               severity: error
-              details: Test Fallo!
+              content: Test Fallo!
               webhookUrl: ${{ secrets.SECFRETS_WEBHOOK }}
     
     DeployExitoso: 
