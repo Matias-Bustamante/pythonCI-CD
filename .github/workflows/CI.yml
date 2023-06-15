@@ -70,7 +70,7 @@ jobs:
     sonarcloudDeploy:
       needs: [deploy]
       if: success()
-      name: SonarCloud
+      name: SonarCloudDeploy
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
